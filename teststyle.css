@@ -1,7 +1,6 @@
  * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 
@@ -11,8 +10,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-
-
 }
 
 
@@ -21,13 +18,10 @@ header ul {
     width: inherit;
     display: inherit;
     justify-content: space-around;
-
-
 }
 
 header ul li {
     display: inline;
-
 }
 
 a {
@@ -47,30 +41,38 @@ a:visited {
     width: 50%;
     text-align: center;
     font-size: 4.3rem;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .name p {
     color: salmon;
 }
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 
 .img-container {
     display: flex;
     justify-content: center;
     padding-top: 0;
-}
+} */
 
 .img-avatar {
     width: 200px;
     height:200px;
+    /* width: 25vh;
+    height: 25vh; */
     background-color: salmon;
     transform: rotate(45deg);
 }
 
 .img-desc {
     text-align: center;
-    width: 25%;
-
-}
+    width: 40vh;
+}   
 
 .img-desc p {
     color: white;
@@ -78,13 +80,23 @@ a:visited {
 }
 
 main {
-    margin-top: 50px;
-    padding-top: 25px;
-    min-height: 300px;
+    margin-top: 55px;
+    padding: 50px;
+    /* min-height: 300px; */
     background-color: rgb(113, 165, 185);
     display: flex;
     justify-content: center;
 }
+
+.work-container {
+    background-color: rgb(255, 245, 110);
+    min-height: 300px;
+}
+
+
+
+
+
 
 footer {
     min-height: 50px;
