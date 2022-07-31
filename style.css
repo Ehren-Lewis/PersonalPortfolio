@@ -126,9 +126,9 @@ main {
     grid-row-start: 2;
 }
 
-.row-3 {
+/* .row-3 {
     grid-row-start: 3;
-}
+} */
 
 .img-left {
     grid-column-start: 2;
@@ -161,7 +161,7 @@ main {
 }
 
 
-.img-right-text {
+.img-text {
     text-align: center;
     display: flex;
     align-items: center;
@@ -221,7 +221,7 @@ main {
     grid-column-start: 2;
 }
 
-.row-3-col-2 {
+.row-3-col-3 {
     grid-row-start: 3;
     grid-column-start: 3;
 }
