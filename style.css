@@ -95,16 +95,13 @@ main {
 
 .my-work {
     padding-top: 50px;
-    background-color: rgb(255, 245, 110);
+    /* background-color: rgb(255, 245, 110); */
     text-align: center;
     font-size: 4.3rem;
     /* color:rgb(204, 103, 122); */
     color: salmon;
     display: flex;
     justify-content: center;
-
-
-
 }
 
 .my-work p {
@@ -113,7 +110,7 @@ main {
 }
 
 .work-container {
-    background-color: rgb(255, 245, 110);
+    /* background-color: rgb(255, 245, 110); */
     min-height: 300px;
     display: grid;
     flex-wrap: wrap;
@@ -167,13 +164,15 @@ main {
 .project-img {
     width: 200px;
     height: 200px;
-    background-color: rgb(204, 103, 122);
+    /* background-color: rgb(204, 103, 122); */
+    background-color: salmon;
 }
 
 
 
 .contact-container {
-    background-color: rgb(143, 122, 86);
+    /* background-color: rgb(77, 36, 61); */
+    background-color: rgb(113, 165, 185);
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -187,10 +186,22 @@ main {
     border-bottom: 3px solid salmon;
 }
 
-/* .contact-form {
+.contact-form {
+    margin: 50px 0;
+    color: salmon;
+    border: 2px solid salmon;
+    padding: 5px;
+    font-size: 2rem;
+    width: 60%;
+}
 
-} */
-
+.contact-form input {
+    width: 100%;
+    height: 2rem;
+}
+.contact-form:nth-child(6) {
+    padding-bottom: 20px ;
+}
 
 
 footer {
@@ -200,8 +211,13 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(114, 86, 86);
-
+    background-color: rgb(87, 128, 143);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
+.fa {
+    color: salmon;
+}
