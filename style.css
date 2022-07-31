@@ -1,86 +1,207 @@
-
-* {
+ * {
     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.header-container {
-position: fixed;
-width: 100%;
-background-color: rgb(129, 153, 174);
-min-height: 50px;
-margin: 0;
-padding-top: 10px;
-top:0;
-left:0;
-z-index: 1;
-box-shadow: 0 1px 3px 0 gray;
 
-}
-
-.header-container ul {
-    list-style: none;
-    /* display: inline; */
-    justify-content: space-around;
+header {
+    box-shadow: 0 1px 3px 0 rgb(146, 140, 140);
+    min-height: 50px;
+    width: 100%;
     display: flex;
-
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.header-container ul li {
+
+header ul {
+    list-style: none;
+    width: inherit;
+    display: inherit;
+    justify-content: space-around;
+}
+
+header ul li {
     display: inline;
 }
-.header-container ul li a{ 
+
+header ul li a {
     text-decoration: none;
-    display: inline;
+    border-bottom: 2px solid salmon;
+}
 
+header ul li a:link {
+    color:black;
+}
+
+header ul li a:visited {
+    color: black;
+}
+
+.name {
+    width: 50%;
+    text-align: center;
+    font-size: 4.3rem;
+    padding-bottom: 50px;
+}
+.name p {
+    color: salmon;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-avatar {
+    width: 200px;
+    height:200px;
+
+    background-color: salmon;
+    transform: rotate(45deg);
+}
+
+.img-desc {
+    text-align: center;
+    width: 50vh;
+}   
+
+.img-desc p {
+    color: white;
+    font-size: large;
+    padding-top: 25px;
 }
 
 main {
-    position: static;
-    margin: 50px auto 0;
-    width: 100%;
-    background-color: rgb(105, 180, 105);
-    min-height: 700px;
-    padding: 50px 10% 50px 10%;
+    margin-top: 55px;
+    padding: 50px;
+    /* min-height: 300px; */
+    background-color: rgb(113, 165, 185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    font-size: 4.3rem;
+    color: salmon;
+    width:max-content;
+    border-bottom: 3px solid salmon;
+}
+
+
+.my-work {
+    padding-top: 50px;
+    background-color: rgb(255, 245, 110);
+    text-align: center;
+    font-size: 4.3rem;
+    /* color:rgb(204, 103, 122); */
+    color: salmon;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.my-work p {
+    width:max-content;
+    border-bottom: 3px solid salmon;
+}
+
+.work-container {
+    background-color: rgb(255, 245, 110);
+    min-height: 300px;
+    display: grid;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2ch;
 
 }
 
 
-.footer-container {
-    position: static;
-    bottom: 0;
-    left: 0; 
-    width: 100%;
-    min-height: 50px;
-    background-color: rgb(105, 105, 105);
+.row-2 {
+    grid-row-start: 2;
+}
+
+.row-3 {
+    grid-row-start: 3;
+}
+
+.img-left {
+    grid-column-start: 2;
+}
+
+.img-right {
+    grid-column-start: 3;
+}
+
+.right-align {
     display: flex;
+    justify-self: end;
 }
 
 
-
-/* .body-img-container {
+.img-right-text {
+    grid-column-start: 2;
+    text-align: center;
     display: flex;
-} */
+    align-items: center;
+    color:rgb(114, 86, 86);
+}
 
-.body-img {
+.img-left-text {
+    grid-column-start: 3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color:rgb(114, 86, 86);
+
+}
+
+.project-img {
     width: 200px;
     height: 200px;
-    background-color: rgb(255, 169, 137);
-    margin-bottom: 20px;
+    background-color: rgb(204, 103, 122);
 }
 
-.float-left {
-    justify-content: start;
+
+
+.contact-container {
+    background-color: rgb(143, 122, 86);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.floar-right {
-    justify-content: end;
+#contact-me {
+    font-size: 4.3rem;
+    color: salmon;
+    width:max-content;
+    border-bottom: 3px solid salmon;
 }
 
-/* .float-left {
-    margin-left: 15%;
-}
+/* .contact-form {
 
-.float-right {
-    margin-right: 15%;
-    margin: 0 15%
 } */
+
+
+
+footer {
+    min-height: 50px;
+    height: 100px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(114, 86, 86);
+
+}
+
+

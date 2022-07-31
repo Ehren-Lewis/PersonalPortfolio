@@ -6,42 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header-container">
+    <header>
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>   
+
     </header>
 
+    <section class="introduction">
+        <div class="name">
+            <p>Ehren "Spriggs" Lewis</p>
+        </div>
+
+        <div class="img-avatar"></div>
+
+    </section>
+
     <main>
-
-        <div class="body-img-container float-left">
-            <div class="body-img"></div>
-        </div>
-
-        <div class="body-img-container float-right">
-            <div class="body-img"></div>
-            
-        </div>
-
-        <div class="body-img-container float-left">
-            <div class="body-img"></div>
-            
+            <p class="about-me" id="about-me">About Me</p>
+            <div class="img-desc">
+            <p>&emsp;&emsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Cumque pariatur perferendis odio adipisci incidunt itaque maiores magnam commodi iure? Est eius a vero, quod similique delectus. Quas, animi 
+                quae eos ipsum ducimus architecto modi officia soluta, 
+                voluptate impedit quidem magnam blanditiis possimus error 
+                officiis totam!
+            </p>
         </div>
 
     </main>
 
-    <div style="margin: 300px"></div>
+    <div class="my-work" id="my-work">
+        <p>My Work</p>
+
+    </div>
+
+    <section class="work-container">
+            <div class="project-img img-left"></div>
+            <p class="img-left-text ">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. A itaque ea incidunt nisi,
+                ad, quam harum molestias enim eius, quia tempora saepe. 
+                Accusamus, ex dolore!
+            </p>
+
+            <div class="project-img img-right row-2 right-align"></div>
+            <p class="img-right-text row-2">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. A itaque ea incidunt nisi,
+                ad, quam harum molestias enim eius, quia tempora saepe. 
+                Accusamus, ex dolore!
+            </p>
 
 
+            <div class="project-img img-left row-3"></div>
+            <p class="img-left-text row-3">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. A itaque ea incidunt nisi,
+                ad, quam harum molestias enim eius, quia tempora saepe. 
+                Accusamus, ex dolore!
+            </p>
 
-    <footer class="footer-container">
+    </section>
 
+    <div class="contact-container">
+        <p id="contact-me">Contact Me</p>
+
+        <form class="contact-form">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="First Name">
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Last Name">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="FirstName.LastName@email.com"></input>
+
+            
+            <br>
+
+        </form>
+    </div>
+
+
+    <footer>
+        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
     </footer>
 
 </body>
+
+
+
 </html>
+
