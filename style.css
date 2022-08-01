@@ -1,5 +1,8 @@
  :root {
+    /* Definitions for default salmon color on certain words 
+    and default alternating background color */
     --textColor: salmon;
+    --altBackgroundColor: rgb(113, 165, 185);
  }
  
  * {
@@ -38,7 +41,7 @@ header ul li {
 /* Removes default anchor design */
 header ul li a {
     text-decoration: none;
-    border-bottom: 2px solid salmon;
+    border-bottom: 2px solid var(--textColor);
 }
 
 /* Specified for header ul li to not conflict with footer anchors. */
@@ -63,7 +66,7 @@ header ul li a:visited {
     padding-bottom: 50px;
     text-align: center;
     font-size: 4.3rem;
-    color: salmon;
+    color: var(--textColor);
 }
 
 
@@ -85,7 +88,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(113, 165, 185);
+    background-color: var(--altBackgroundColor);
 }
 
 
@@ -93,8 +96,8 @@ main {
 #about-me {
     width:max-content;
     font-size: 4.3rem;
-    color: salmon;
-    border-bottom: 3px solid salmon;
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);
 }
 
 
@@ -104,14 +107,14 @@ main {
     justify-content: center;
     font-size: 4.3rem;
     text-align: center;
-    color: salmon;
+    color: var(--textColor);
 
 }
 
 /* Trying to put the p decoration in the parent isnt working */
 #my-work p {
     width:max-content;
-    border-bottom: 3px solid salmon;
+    border-bottom: 3px solid var(--textColor);
 }
 
 
@@ -144,7 +147,7 @@ main {
     align-items: center;
     font-size: 2.3rem;
     text-align: center; 
-    color: salmon;
+    color: var(--textColor);
 }
 
 .img-text {
@@ -159,7 +162,7 @@ main {
 .project-img {
     width: 200px;
     height: 200px;
-    background-color: salmon;
+    background-color: var(--textColor);
 }
 
 
@@ -199,26 +202,22 @@ main {
     grid-area: k;
 }
 
-
-
 .contact-container {
     min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(113, 165, 185);
+    background-color: var(--altBackgroundColor);
 }
-
 
 /* ID for href direction */
 #contact-me {
     width:max-content;
     margin-top: 25px;  
     font-size: 4.3rem;
-    color: salmon;
-    border-bottom: 3px solid salmon;     
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);     
 }
-
 
 /* Form styling to fit the theme */
 .contact-form {
@@ -226,8 +225,8 @@ main {
     margin: 50px 0;
     padding: 15px 15px 25px 15px;
     font-size: 2rem;
-    color: salmon;
-    border: 2px solid salmon;
+    color: var(--textColor);
+    border: 2px solid var(--textColor);
 }
 
 .contact-form input {
@@ -239,21 +238,19 @@ main {
     margin: 10px auto 0;
     padding: 2px;
     font-size: 1.5rem;
-    color: salmon;
+    color: var(--textColor);
     background-color: transparent;
     border-radius: 2px;
-    border: 2px solid salmon;
+    border: 2px solid var(--textColor);
 }
 
 .button-wrapper {
     text-align: center;
 }
 
-
 .form-button:hover {
     cursor: pointer;
 }
-
 
 footer {
     width: 100%;
@@ -270,10 +267,8 @@ footer {
 
 /* Changes font awesome class color */
 .fa {
-    color: salmon;
+    color: var(--textColor);
 }
-
-
 
 /* Only media needed so far, around 810 pixels was when the project area fell apart
 Makes it to where the columns and rows become only columns, done by using
@@ -295,7 +290,5 @@ pure css, so the row and column definitoin is needed since there are no removing
         "i"
         "j"
         "k";
-        /* row-gap: 2ch; */
-    
     }
 }
