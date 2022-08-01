@@ -1,23 +1,32 @@
+ :root {
+    --textColor: salmon;
+ }
+ 
  * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
+/* Tried creating a default flex define class that could
+Have as many styling and cover as many classes, but
+all styling of classes is semi unique, some have 2 of 3
+properties, the other have a different 2 of 3 properties */
 
+/* Header styling */
 header {
-    box-shadow: 0 1px 3px 0 rgb(146, 140, 140);
     min-height: 50px;
     width: 100%;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgb(146, 140, 140);
 }
 
-
+/* Removes default list style design */
 header ul {
-    list-style: none;
     width: inherit;
+    list-style: none;
     display: inherit;
     justify-content: space-around;
 }
@@ -26,10 +35,13 @@ header ul li {
     display: inline;
 }
 
+/* Removes default anchor design */
 header ul li a {
     text-decoration: none;
     border-bottom: 2px solid salmon;
 }
+
+/* Specified for header ul li to not conflict with footer anchors. */
 
 header ul li a:link {
     color:black;
@@ -39,68 +51,65 @@ header ul li a:visited {
     color: black;
 }
 
-.name {
-    width: 50%;
-    text-align: center;
-    font-size: 4.3rem;
-    padding-bottom: 50px;
-}
-.name p {
-    color: salmon;
-}
-
 .introduction {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
+
+.name {
+    width: 50%;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 4.3rem;
+    color: salmon;
+}
+
 
 .img-avatar {
     transform: rotate(-45deg);
 }
 
 .img-desc {
-    text-align: center;
-    width: 50vh;
-}   
-
-.img-desc p {
-    color: white;
     font-size: large;
     padding-top: 25px;
-}
+    text-align: center;
+    width: 50vh;
+    color: white;
+}   
 
 main {
     margin-top: 55px;
     padding: 50px;
-    /* min-height: 300px; */
-    background-color: rgb(113, 165, 185);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(113, 165, 185);
 }
 
-.about-me {
+
+/* ID so it can be targeted by href */
+#about-me {
+    width:max-content;
     font-size: 4.3rem;
     color: salmon;
-    width:max-content;
     border-bottom: 3px solid salmon;
 }
 
 
-.my-work {
+#my-work {
     padding-top: 50px;
-    /* background-color: rgb(255, 245, 110); */
-    text-align: center;
-    font-size: 4.3rem;
-    /* color:rgb(204, 103, 122); */
-    color: salmon;
     display: flex;
     justify-content: center;
+    font-size: 4.3rem;
+    text-align: center;
+    color: salmon;
+
 }
 
-.my-work p {
+/* Trying to put the p decoration in the parent isnt working */
+#my-work p {
     width:max-content;
     border-bottom: 3px solid salmon;
 }
@@ -109,10 +118,9 @@ main {
 
 /* Grid system for the project section, designed with grid template area to be responsive */
 .work-container {
-    /* background-color: rgb(255, 245, 110); */
     min-height: 300px;
-    display: grid;
     padding: 50px 0;
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
     "a b b c"
@@ -122,37 +130,32 @@ main {
 
 }
 
-
-.right-align {  
+.align {
     display: flex;
-    justify-self: center;
-}
-
-.left-align {
-    display: flex;
-    justify-self: center;
+    justify-self: center; /*Only until I get the Dune picture in */
+    justify-content: center;
     
 }
 
 .project-title {
-    color: salmon;
-    text-align: center; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.3rem;
     padding: 0 15px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    text-align: center; 
+    color: salmon;
 }
 
-
 .img-text {
-    text-align: center;
     display: flex;
     align-items: center;
+    text-align: center;
     color:rgb(114, 86, 86);
 }
 
+
+/* Only until I get the dune image, might change to just img for width and height */
 .project-img {
     width: 200px;
     height: 200px;
@@ -199,30 +202,32 @@ main {
 
 
 .contact-container {
-    /* background-color: rgb(77, 36, 61); */
-    background-color: rgb(113, 165, 185);
     min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(113, 165, 185);
 }
 
+
+/* ID for href direction */
 #contact-me {
+    width:max-content;
+    margin-top: 25px;  
     font-size: 4.3rem;
     color: salmon;
-    width:max-content;
-    border-bottom: 3px solid salmon;
-    margin-top: 25px;       
+    border-bottom: 3px solid salmon;     
 }
 
+
+/* Form styling to fit the theme */
 .contact-form {
+    width: 50%;
     margin: 50px 0;
-    color: salmon;
-    border: 2px solid salmon;
-    /* padding: 5px; */
     padding: 15px 15px 25px 15px;
     font-size: 2rem;
-    width: 50%;
+    color: salmon;
+    border: 2px solid salmon;
 }
 
 .contact-form input {
@@ -231,13 +236,13 @@ main {
 }
 
 .form-button {
-    background-color: transparent;
-    border-radius: 2px;
-    border: 2px solid salmon;
-    color: salmon;
     margin: 10px auto 0;
     padding: 2px;
     font-size: 1.5rem;
+    color: salmon;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid salmon;
 }
 
 .button-wrapper {
@@ -251,19 +256,17 @@ main {
 
 
 footer {
+    width: 100%;
     min-height: 50px;
     height: 100px;
     position: static;
     bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: rgb(87, 128, 143);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(87, 128, 143);
 }
-
-
 
 /* Changes font awesome class color */
 .fa {
@@ -277,10 +280,10 @@ Makes it to where the columns and rows become only columns, done by using
 pure css, so the row and column definitoin is needed since there are no removing classes */
 @media screen and (max-width: 810px) {
      .work-container {
-        min-height: 300px;
         margin: 0 30px;
-        display: grid;
         padding: 50px 0;
+        min-height: 300px;
+        display: grid;
         grid-template-columns: 100%;
         grid-template-areas: 
         "a"

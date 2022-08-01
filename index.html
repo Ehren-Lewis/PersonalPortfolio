@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="./style.css" rel="stylesheet">
+    <!-- CDN link for fa icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    
     <header>
         <ul>
             <li><a href="#about-me">About Me</a></li>
@@ -31,7 +33,7 @@
     </section>
 
     <main>
-            <p class="about-me" id="about-me">About Me</p>
+            <p id="about-me">About Me</p>
             <div class="img-desc">
             <p>&emsp;&emsp;My name is Ehren, I am currently a student
                 in the University of Denver Fullstack Software Developer
@@ -40,27 +42,28 @@
                 and I'm excited to use my skills to help in whatever way I can!
             </p>
         </div>
-
     </main>
 
-    <div class="my-work" id="my-work">
+    <!-- Outside of main to complement the work styling container, but also outside work container
+    to not cause any styling conflict either -->
+    <div id="my-work">
         <p>My Work</p>
-
     </div>
 
     <section class="work-container">
             <p class="project-title row-1-col-1">Cyber Interative Landing Page</p>
-            <a href="https://github.com/Ehren-Lewis/Rogue.io" target="_blank"class="left-align row-1-col-2">
+            <a href="https://github.com/Ehren-Lewis/Rogue.io" target="_blank"class="align row-1-col-2">
                 <img src="./images/rougelandingtest.png" width="400px" height="200px">
             </a>
 
             <p class="img-text row-1-col-3">Cyber Interative is an up-and-coming game
-                hoested in browser that will be built with Bootstrap, React, Node,
+                hosted in browser. It is currently built with HTML, CSS, and Bootstrap.
+                When completed, it will be built with Bootstrap, React, Node,
                 and MondoDB for the backend.
             </p>    
 
             <p class="project-title row-2-col-4">Bookshelf Desktop Application</p>
-            <a href="#" class="right-align row-2-col-3">
+            <a href="#" class="align row-2-col-3">
                 <img  src="./images/tkinterBookshelf.png" width="200px" height="200px">
             </a>
             <p class="img-text row-2-col-2">Python desktop application built with Tkinter
