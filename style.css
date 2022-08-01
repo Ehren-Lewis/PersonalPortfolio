@@ -57,11 +57,7 @@ header ul li a:visited {
 }
 
 .img-avatar {
-    width: 200px;
-    height:200px;
-
-    background-color: salmon;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .img-desc {
@@ -113,51 +109,38 @@ main {
     /* background-color: rgb(255, 245, 110); */
     min-height: 300px;
     display: grid;
-    flex-wrap: wrap;
     padding: 50px 0;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l";
     row-gap: 2ch;
 
+
+    /* spacing is d e l */
 }
 
 
-.row-2 {
-    grid-row-start: 2;
-}
-
-/* .row-3 {
-    grid-row-start: 3;
-} */
-
-.img-left {
-    grid-column-start: 2;
-}
-
-.img-right {
-    grid-column-start: 3;
-}
-
-
-.column-1 {
-    grid-column-start: 1;
-}
-.column-4 {
-    grid-column-start: 4;
-}
-
-.right-align {
+.right-align {  
     display: flex;
-    justify-self: end;
+    justify-self: center;
+}
+
+.left-align {
+    display: flex;
+    justify-self: center;
+    
 }
 
 .project-title {
     color: salmon;
-    text-align: center;
+    text-align: center; 
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 2.3rem;
+    padding: 0 15px;
+
 }
 
 
@@ -168,14 +151,6 @@ main {
     color:rgb(114, 86, 86);
 }
 
-.img-left-text {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color:rgb(114, 86, 86);
-
-}
-
 .project-img {
     width: 200px;
     height: 200px;
@@ -183,47 +158,38 @@ main {
 }
 
 .row-1-col-1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
+    grid-area: a;
 }
 
 .row-1-col-2 {
-    grid-row-start: 1;
-    grid-column-start: 2;
+    grid-area: b;
 }
 
 .row-1-col-3 {
-    grid-row-start: 1;
-    grid-column-start: 3;
+    grid-area: c;
 }
 
 .row-2-col-2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
+    grid-area: f;
 }
 
 .row-2-col-3 {
-    grid-row-start: 2;
-    grid-column-start: 3;
+    grid-area: g;
 }
 
 .row-2-col-4 {
-    grid-row-start: 2;
-    grid-column-start: 4;
+    grid-area: h;
 }
 
 .row-3-col-1 {
-    grid-row-start: 3;
-    grid-column-start: 1;
+    grid-area: i;
 }
 .row-3-col-2 {
-    grid-row-start: 3;
-    grid-column-start: 2;
+    grid-area: j;
 }
 
 .row-3-col-3 {
-    grid-row-start: 3;
-    grid-column-start: 3;
+    grid-area: k;
 }
 
 
@@ -242,6 +208,7 @@ main {
     color: salmon;
     width:max-content;
     border-bottom: 3px solid salmon;
+    margin-top: 25px;       
 }
 
 .contact-form {
@@ -298,89 +265,24 @@ footer {
 }
 
 
-@media screen and (max-width: 10px) {
-    /* .work-container {
-        min-height: 300px;
-        display: grid;
-        padding: 50px 0;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 2ch;
-    
-    }
-     */
-
+@media screen and (max-width: 810px) {
      .work-container {
         min-height: 300px;
+        margin: 0 30px;
         display: grid;
         padding: 50px 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-        row-gap: 2ch;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "h"
+        "g"
+        "f"
+        "i"
+        "j"
+        "k";
+        /* row-gap: 2ch; */
     
     }
-    
-    
-    .row-2 {
-        grid-row-start: 2;
-    }
-    
-    .row-3 {
-        grid-row-start: 3;
-    }
-    
-    .img-left {
-        grid-column-start: 2;
-    }
-    
-    .img-right {
-        grid-column-start: 3;
-    }
-    
-    
-    .column-1 {
-        grid-column-start: 1;
-    }
-    .column-4 {
-        grid-column-start: 4;
-    }
-    
-    .right-align {
-        display: flex;
-        justify-self: end;
-    }
-    
-    .project-title {
-        color: salmon;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.3rem;
-    }
-    
-    
-    .img-right-text {
-        grid-column-start: 2;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        color:rgb(114, 86, 86);
-    }
-    
-    .img-left-text {
-        grid-column-start: 3;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        color:rgb(114, 86, 86);
-    
-    }
-    
-    /* .project-img {
-        width: 200px;
-        height: 200px;
-        background-color: salmon;
-    } */
-    
 }
