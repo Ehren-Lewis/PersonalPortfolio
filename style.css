@@ -105,6 +105,9 @@ main {
     border-bottom: 3px solid salmon;
 }
 
+
+
+/* Grid system for the project section, designed with grid template area to be responsive */
 .work-container {
     /* background-color: rgb(255, 245, 110); */
     min-height: 300px;
@@ -117,8 +120,6 @@ main {
     "i j k l";
     row-gap: 2ch;
 
-
-    /* spacing is d e l */
 }
 
 
@@ -136,7 +137,7 @@ main {
 .project-title {
     color: salmon;
     text-align: center; 
-    /* display: flex; */
+    display: flex;
     align-items: center;
     font-size: 2.3rem;
     padding: 0 15px;
@@ -152,11 +153,13 @@ main {
 }
 
 .project-img {
-    width: 200px;
+    width: 300px;
     height: 200px;
     background-color: salmon;
 }
 
+
+/* Mass row and column definition so each class will line up with a certain section */
 .row-1-col-1 {
     grid-area: a;
 }
@@ -260,11 +263,17 @@ footer {
 }
 
 
+
+/* Changes font awesome class color */
 .fa {
     color: salmon;
 }
 
 
+
+/* Only media needed so far, around 810 pixels was when the project area fell apart
+Makes it to where the columns and rows become only columns, done by using
+pure css, so the row and column definitoin is needed since there are no removing classes */
 @media screen and (max-width: 810px) {
      .work-container {
         min-height: 300px;
