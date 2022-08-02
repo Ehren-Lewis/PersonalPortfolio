@@ -169,6 +169,7 @@ main {
     grid-area: b;
 }
 
+/* Padding is used to make the elements not rest directly at the edge of the screen */
 .row-1-col-3 {
     grid-area: c;
     padding-right: 50px;
@@ -295,6 +296,7 @@ pure css, so the row and column definitoin is needed since there are no removing
         text-align: center;
     }
 
+    /* Removes the padding so all the text is centered in the middle again  */
     .row-1-col-3, .row-2-col-3, .row-3-col-3 {
         padding-right: 0;
     }

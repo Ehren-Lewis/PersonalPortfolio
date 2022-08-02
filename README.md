@@ -19,7 +19,12 @@ the children and not the column itself, so I had to reformat
 the my work section to make sure there was concise connectedness
 between the title, image, and description.
 
-Known issues: The form doesn't have any javascript elements, submitting form detail
+Known issues: 
+The biggest issue is when learning the MERN stack, I don't have any web applications deployed,
+two of the projects are built out of python and are command line, and one is a landing page that is only
+html, css, and bootstrap. The current software development skills I have do not line up with my future career path.
+
+The form doesn't have any javascript elements, submitting form detail
 won't do anything besides redirect to another page, which will be setup down the line.
 This does also create the issue. For using github pages, the connection is secure, but
 having the form could be an issue down the line if the connection is HTTP instead of HTTPS
@@ -46,6 +51,6 @@ The user can use this project for viewing my personal development work,
 as well as testing my ability to program responsively, using flex and grid containers,
 images that are links, as well as styling
 
-![Image of the my work section in full view](./images/readmeimages/myWorkUnresponsive.png.png)
+![Image of the my work section in full view](./images/readmeimages/myWorkUnresponsive.png)
 ![Image of the my work section in responsive view](./images/readmeimages/myWorkResponsive.png)
 
