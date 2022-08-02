@@ -158,7 +158,6 @@ main {
 .project-img {
     width: 200px;
     height: 200px;
-    background-color: var(--textColor);
 }
 
 /* Mass row and column definition so each class will line up with a certain section */

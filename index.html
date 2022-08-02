@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ehren's Portfolio</title>
     <link href="./style.css" rel="stylesheet">
     <!-- CDN link for fa icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
 
     <header>
         <ul>
@@ -64,7 +63,7 @@
             </p>    
 
             <p class="project-title row-2-col-1">Bookshelf Desktop Application</p>
-            <a href="#" class="align row-2-col-2">
+            <a href="https://github.com/Ehren-Lewis/TkinterBookshelf" target="_blank" class="align row-2-col-2">
                 <img  src="./images/tkinterBookshelf.png" width="200px" height="200px">
             </a>
             <p class="img-text row-2-col-3">Python desktop application built with Tkinter
@@ -75,7 +74,9 @@
             </p>
 
             <p class="project-title row-3-col-1">Dune Movie Review Webscraper</p>
-            <div class="project-img align row-3-col-2"></div>
+            <a href="https://github.com/Ehren-Lewis/DuneWebScaper" target="_blank" class="align row-3-col-2" target="_blank">
+                <img  src="./images/scrapingResults.png" width="200px" height="200px">
+            </a>
             <p class="img-text row-3-col-3">Command line Python data scraper. Gathers
                 information on the 2021 movie "Dune" and presents it in an easy to digest
                 format. Built off of Selenium automation, BeautifulSoup for html scraping,
@@ -84,9 +85,10 @@
 
     </section>
 
-    <div class="contact-container">
+    <section class="contact-container">
         <p id="contact-me">Contact Me</p>
 
+        <!-- There is no HTTP protocol or response status -->
         <form class="contact-form" action="./formsubmitted.html">
             <label for="fname">First Name: </label>
             <input type="text" id="fname" placeholder="First Name">
@@ -101,19 +103,17 @@
                 <button type="submit" class="form-button">Submit</button>
             </div>
         </form>
-    </div>
-
+    </section>
 
     <footer>
         <a href="mailto:Ehren.Lewis@icloud.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         <a href="https://github.com/Ehren-Lewis" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <!-- No resume that would be applicable for software development yet, so the href doesn't redirect anywhere -->
         <a href="#"><i class="fa fa-file fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/ehrenlewis/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
     </footer>
 
 </body>
-
-
 
 </html>
 

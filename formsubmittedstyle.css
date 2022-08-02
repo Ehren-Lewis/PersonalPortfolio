@@ -80,13 +80,13 @@ footer {
     background-color: rgb(87, 128, 143);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .response {
         font-size: 3rem;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .response {
         font-size: 2rem;
     }
