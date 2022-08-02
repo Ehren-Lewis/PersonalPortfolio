@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 /* Tried creating a default flex define class that could
@@ -121,8 +122,8 @@ main {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
     "a b b c"
-    "e f g h"
-    "i j k l";
+    "e f f h"
+    "i j j l";
     row-gap: 2ch;
 
 }
@@ -130,17 +131,19 @@ main {
 .align {
     display: flex;
     justify-self: center; /*Only until I get the Dune picture in */
-    justify-content: center;
+    /* justify-content: start; */
+    text-align: start;
     
 }
 
 .project-title {
     padding: 0 15px;
     display: flex;
+    /* justify-content: center; */
     justify-content: center;
     align-items: center;
     font-size: 2.3rem;
-    text-align: center; 
+    text-align: end; 
     color: var(--textColor);
 }
 
@@ -169,6 +172,11 @@ main {
 
 .row-1-col-3 {
     grid-area: c;
+    padding-right: 50px;
+}
+
+.row-2-col-1 {
+    grid-area: e;
 }
 
 .row-2-col-2 {
@@ -176,11 +184,8 @@ main {
 }
 
 .row-2-col-3 {
-    grid-area: g;
-}
-
-.row-2-col-4 {
     grid-area: h;
+    padding-right: 50px;
 }
 
 .row-3-col-1 {
@@ -191,8 +196,12 @@ main {
 }
 
 .row-3-col-3 {
-    grid-area: k;
+    grid-area: l;
+    padding-right: 50px;
 }
+
+
+
 
 .contact-container {
     min-height: 300px;
@@ -276,11 +285,20 @@ pure css, so the row and column definitoin is needed since there are no removing
         "a"
         "b"
         "c"
-        "h"
-        "g"
+        "e"
         "f"
+        "h"
         "i"
         "j"
-        "k";
+        "l";
     }
+    .project-title {
+        text-align: center;
+    }
+
+    .row-1-col-3, .row-2-col-3, .row-3-col-3 {
+        padding-right: 0;
+    }
+    
+
 }

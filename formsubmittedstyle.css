@@ -3,7 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     color: salmon;
-
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 main {
@@ -55,8 +55,6 @@ header ul li a:visited {
     width: 50%;
     text-align: center;
     margin: 0 25%;
-    padding: 25vh 0;
-
 }
 
 
@@ -74,11 +72,22 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-
 }
 
 
 .fa {
     color: salmon;
     background-color: rgb(87, 128, 143);
+}
+
+@media screen and (max-width: 800px) {
+    .response {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .response {
+        font-size: 2rem;
+    }
 }
